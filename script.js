@@ -76,5 +76,5 @@ function displayCatHeart() {
     };
 }
 
-// Display the cat.gif initially
-displayCat();
+// Display the cupid.gif.gif initially
+displayCupid();
