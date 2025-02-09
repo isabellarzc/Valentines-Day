@@ -7,7 +7,7 @@ function selectOption(option) {
         // Flash rainbow colors
         flashRainbowColors(function() {
             document.getElementById('question').style.display = 'none'; // Hide the question
-            displayCupid(); // Display the cupi.gif.gif
+            displaySosa(); // Display the sosa.gif
         });
     } else if (option === 'Nom') {
         // Change text on the "Nom" button to "¿Seguro?"
@@ -40,41 +40,41 @@ function flashRainbowColors(callback) {
     }, 2000); // Flash colors for 2 seconds
 }
 
-// Function to display the cupid.gif initially
-function displayCupid() {
+// Function to display the loveyou.gif initially
+function displayLoveyou() {
     // Get the container where the image will be displayed
     var imageContainer = document.getElementById('image-container');
-    // Create a new Image element for cupid
-    var CupidImage = new Image();
-    // Set the source (file path) for the cupid image
-    CupidImage.src = 'cupid.gif.gif'; // Assuming the cat image is named "cupid.gif.gif"
+    // Create a new Image element for Loveyou
+    var LoveyouImage = new Image();
+    // Set the source (file path) for the Loveyou image
+    LoveyouImage.src = 'loveyou.gif'; // Assuming the image is named "loveyou.gif"
     // Set alternative text for the image (for accessibility)
-    CupidImage.alt = 'Cupid';
+    LoveyouImage.alt = 'Loveyou';
     // When the cupid image is fully loaded, add it to the image container
-    CupidImage.onload = function() {
-        imageContainer.appendChild(CupidImage);
+    LoveyouImage.onload = function() {
+        imageContainer.appendChild(LoveyouImage);
     };
 }
 
-// Function to display the cat-heart.gif
-function displayCatHeart() {
+// Function to display the sosa.gif
+function displaySosa() {
     // Clear existing content in the image container
     document.getElementById('image-container').innerHTML = '';
     // Get the container where the image will be displayed
     var imageContainer = document.getElementById('image-container');
-    // Create a new Image element for the cat-heart
-    var catHeartImage = new Image();
-    // Set the source (file path) for the cat-heart image
-    catHeartImage.src = 'cat-heart.gif'; // Assuming the cat-heart image is named "cat-heart.gif"
+    // Create a new Image element for Sosa
+    var SosaImage = new Image();
+    // Set the source (file path) for the Sosa image
+    SosaImage.src = 'sosa.gif'; // Assuming the cat-heart image is named "sosa.gif"
     // Set alternative text for the image (for accessibility)
-    catHeartImage.alt = 'Cat Heart';
-    // When the cat-heart image is fully loaded, add it to the image container
-    catHeartImage.onload = function() {
-        imageContainer.appendChild(catHeartImage);
+    SosaImage.alt = 'Sosa';
+    // When the Sosa image is fully loaded, add it to the image container
+    SosaImage.onload = function() {
+        imageContainer.appendChild(SosaImage);
         // Hide the options container
         document.getElementById('options').style.display = 'none';
     };
 }
 
-// Display the cupid.gif.gif initially
-displayCupid();
+// Display the loveyou.gif initially
+displayLoveyou();
