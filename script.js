@@ -5,15 +5,15 @@ function selectOption(option) {
     // Check which option was clicked
     if (option === 'Sim') {
     } else if (option === 'Nom') {
-        // Change text on the "No" button to "You sure?"
+        // Change text on the "Nom" button to "¿Seguro?"
         document.getElementById('Nom-button').innerText = '¿Seguro?'; 
-        // Increase font size of "Yes" button
+        // Increase font size of "Sim" button
         var SimButton = document.getElementById('Sim-button');
         var currentFontSize = window.getComputedStyle(SimButton).getPropertyValue('font-size');
         var newSize = parseFloat(currentFontSize) * 2; // Increase font size by  * 2px
         SimButton.style.fontSize = newSize + 'px';
     } else {
-        // If neither "Yes" nor "No" was clicked, show an alert message
+        // If neither "SSim" nor "Nom" was clicked, show an alert message
         alert('¡Responde!');
     }
 }
