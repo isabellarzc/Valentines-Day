@@ -40,7 +40,7 @@ function flashRainbowColors(callback) {
     }, 2000); // Flash colors for 2 seconds
 }
 
-// Function to display the cupid.gif.gif initially
+// Function to display the cupid.gif initially
 function displayCupid() {
     // Get the container where the image will be displayed
     var imageContainer = document.getElementById('image-container');
