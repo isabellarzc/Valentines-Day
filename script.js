@@ -4,6 +4,11 @@
 function selectOption(option) {
     // Check which option was clicked
     if (option === 'Sim') {
+        // Flash rainbow colors
+        flashRainbowColors(function() {
+            document.getElementById('question').style.display = 'none'; // Hide the question
+            displayCatHeart(); // Display the cat-heart.gif
+        });
     } else if (option === 'Nom') {
         // Change text on the "Nom" button to "¿Seguro?"
         document.getElementById('Nom-button').innerText = '¿Seguro?'; 
@@ -44,7 +49,7 @@ function displayCupid() {
     // Set the source (file path) for the cupid image
     CupidImage.src = 'cupid.gif.gif'; // Assuming the cat image is named "cupid.gif.gif"
     // Set alternative text for the image (for accessibility)
-    CupidImage.alt = 'Cat';
+    CupidImage.alt = 'Cupid';
     // When the cupid image is fully loaded, add it to the image container
     CupidImage.onload = function() {
         imageContainer.appendChild(CupidImage);
