@@ -7,7 +7,7 @@ function selectOption(option) {
         // Flash rainbow colors
         flashRainbowColors(function() {
             document.getElementById('question').style.display = 'none'; // Hide the question
-            displayCatHeart(); // Display the cat-heart.gif
+            displayCupid(); // Display the cupi.gif.gif
         });
     } else if (option === 'Nom') {
         // Change text on the "Nom" button to "¿Seguro?"
