@@ -13,7 +13,7 @@ function selectOption(option) {
         var newSize = parseFloat(currentFontSize) * 2; // Increase font size by  * 2px
         SimButton.style.fontSize = newSize + 'px';
     } else {
-        // If neither "SSim" nor "Nom" was clicked, show an alert message
+        // If neither "Sim" nor "Nom" was clicked, show an alert message
         alert('¡Responde!');
     }
 }
@@ -35,19 +35,19 @@ function flashRainbowColors(callback) {
     }, 2000); // Flash colors for 2 seconds
 }
 
-// Function to display the cat.gif initially
-function displayCat() {
+// Function to display the cupid.gif.gif initially
+function displayCupid() {
     // Get the container where the image will be displayed
     var imageContainer = document.getElementById('image-container');
-    // Create a new Image element for the cat
-    var catImage = new Image();
-    // Set the source (file path) for the cat image
-    catImage.src = 'cat.gif'; // Assuming the cat image is named "cat.gif"
+    // Create a new Image element for cupid
+    var CupidImage = new Image();
+    // Set the source (file path) for the cupid image
+    CupidImage.src = 'cupid.gif.gif'; // Assuming the cat image is named "cupid.gif.gif"
     // Set alternative text for the image (for accessibility)
-    catImage.alt = 'Cat';
-    // When the cat image is fully loaded, add it to the image container
-    catImage.onload = function() {
-        imageContainer.appendChild(catImage);
+    CupidImage.alt = 'Cat';
+    // When the cupid image is fully loaded, add it to the image container
+    CupidImage.onload = function() {
+        imageContainer.appendChild(CupidImage);
     };
 }
 
